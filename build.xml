@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Hello World Project" default="info">
+    <target name="hello">
+        <echo>Hello World!</echo>
+    </target>
+     
+	 <target name="info">
+      <copy todir="C:\Users\miracle\.jenkins\workspace" flatten="true">
+      <resources>
+          <file file="./Balu.properties"/>
+      </resources>
+ </copy>
+   </target>
+   
+    <target name="myTarget">
+        <echo>My target executed</echo>
+    </target>
+</project>
+
